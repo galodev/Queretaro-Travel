@@ -1,0 +1,129 @@
+@font-face {
+font-family: MoskBold;
+src: url(Mosk\ Bold\ 700.ttf);
+}
+
+@font-face {
+font-family: MoskSemiBold;
+src: url(Mosk\ Semi-Bold\ 600.ttf);
+}
+
+@font-face {
+font-family: MoskUltraBold;
+src: url(Mosk\ Ultra-Bold\ 900.ttf);
+}
+    
+@font-face {
+font-family: MoskExtraBold;
+src: url(Mosk\ Extra-Bold\ 800.ttf);
+}
+
+@font-face {
+font-family: MoskMedium;
+src: url(Mosk\ Medium\ 500.ttf);
+}
+        
+@font-face {
+font-family: MoskNormal;
+src: url(Mosk\ Normal\ 400.ttf);
+}
+
+@font-face {
+font-family: MoskLight;
+src: url(Mosk\ Light\ 300.ttf);
+}
+
+
+html, body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffffb;
+    color: #1c1c1c;
+    font-family: MontreuxClassic;
+    font-weight: bolder;
+    letter-spacing: 0.02rem;
+    margin: 0em;
+    width: 100%;
+    height: 6em
+}
+
+.nav-container img {
+    width: 11%;
+    margin: 0em 2.2em;
+    padding: 0%;
+}
+
+.navbar-ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+.nav-a {
+    text-decoration: none;
+    margin: 0em 0.7em;
+}
+
+.nav-a:hover {
+    color: #fd9200;
+    border-bottom: 0.18rem solid #fd9200;
+}
+
+@media (max-width:675px) {
+    .qro-video {
+        width: 100%;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-a {
+        font-size: 0.8rem;
+        margin: 0em 0.8em;
+    }
+}
+
+.regions-section {
+    width: 75%;
+    background-color: aqua;
+    height: 500px;
+}
+
+.regions-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.region {
+    color: #1c1c1c;
+    background-color: #fd9200;
+    width: 14%;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.acueducto {
+    background-image: url(losarcos.jpg);
+}
+
+.region h3 {
+    font-family: MoskBold;
+    padding: 90px 18px 0px 18px;
+    color: #fffffb;
+}
+
+.section-title {
+    margin: 0%;
+    text-align: center;
+    padding: 1.6em 0EM;
+    font-family: MoskExtraBold;
+    font-size: 2.4rem;
+    letter-spacing: 0.04rem;
+}
+ ok
