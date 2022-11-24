@@ -89,43 +89,117 @@ html, body {
 }
 
 .regions-section {
-    width: 75%;
+    width: 100%;
     background-color: aqua;
-    height: 500px;
+    height: 550px;
 }
 
 .regions-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly
 }
 
 .region {
-    color: #1c1c1c;
-    background-color: #fd9200;
-    width: 14%;
-    height: 300px;
+    width: 14.8%;
+    height: 380px;
     text-align: center;
     border-radius: 5px;
-}
-
-.acueducto {
-    background-image: url(losarcos.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .region h3 {
     font-family: MoskBold;
     padding: 90px 18px 0px 18px;
     color: #fffffb;
+    font-size: 1.6rem;
+    letter-spacing: 0.03rem;
+    text-shadow: 0.8px 0.8px 5px #181818;
+}
+
+.acueducto {
+    background-image: url(losarcos.jpg);
+}
+
+.centro {
+    background-image: url(centrohistorico1.jpg);
+}
+
+.sierragorda {
+    background-image: url(pinaldeamoles.jpeg);
+}
+
+.pueblito {
+    background-image: url(piramide.jpg);
+}
+
+.bernal {
+    background-image: url(penadebernal1.jfif);
+}
+
+.vinedos {
+    background-image: url(vineria.jpg);
 }
 
 .section-title {
+    color: #1c1c1c;
     margin: 0%;
     text-align: center;
-    padding: 1.6em 0EM;
-    font-family: MoskExtraBold;
+    padding: 1.6em 0em;
+    font-family: MoskBold;
     font-size: 2.4rem;
     letter-spacing: 0.04rem;
 }
 
-asdasdsdaasd
-gfh
+.experiences-container {
+    width: 100%;
+    background-color: brown;
+    height:1000px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-more-arrow {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
+#arrow {
+    color: white;
+}
+
+#arrow-bg{
+    color:red;
+}
+
+.experience {
+    font-family: MoskSemiBold;
+    font-size: 1.4rem;
+}
+
+#icon-bg-footer {
+    color: #1c1c1c;
+}
+
+#icon-footer {
+    color: #fffffb;
+}
+
+.experiences-sections-one, .experiences-sections-two, .experiences-sections-three {
+    display: flex;
+    flex-direction: row;
+}
+
+.vendimia, .hiking, .swiming, .lights, .hotairballoon, .eat {
+    width: 42%;
+}
+
+.vendimia {
+    background-image: url(vendimia.jpg);
+    background-size: cover;
+}
+
