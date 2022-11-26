@@ -33,24 +33,43 @@ font-family: MoskLight;
 src: url(Mosk\ Light\ 300.ttf);
 }
 
+@font-face {
+    font-family: HelveticaNowRegular;
+    src: url(HelveticaNowText-Regular\ \(1\).ttf);
+    }
+
+@font-face {
+    font-family: HelveticaNowMedium;
+    src: url(HelveticaNowText-Medium\ \(1\).ttf);
+    }
+
+
+@font-face {
+    font-family: HelveticaNowExtraBold;
+    src: url(HelveticaNowText-ExtraBold.ttf);
+    }
+
+@font-face {
+    font-family: HelveticaNowBold;
+    src: url(HelveticaNowText-Bold\ \(2\).ttf);
+    }
+
+
 
 html, body {
     margin: 0%;
     padding: 0%;
+    background-color: rgb(250, 250, 250);
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fffffb;
-    color: #1c1c1c;
-    font-family: MontreuxClassic;
-    font-weight: bolder;
-    letter-spacing: 0.02rem;
+    background-color:rgb(250, 250, 250);
     margin: 0em;
     width: 100%;
-    height: 6em
+    height: 5em
 }
 
 .nav-container img {
@@ -68,11 +87,14 @@ html, body {
 .nav-a {
     text-decoration: none;
     margin: 0em 0.7em;
+    font-family: MoskBold;
+    font-size: 1rem;
+    color: #1c1c1c;
 }
 
 .nav-a:hover {
-    color: #fd9200;
-    border-bottom: 0.18rem solid #fd9200;
+    color: #750502;
+    border-bottom: 0.18rem solid #750502;
 }
 
 @media (max-width:675px) {
@@ -90,13 +112,18 @@ html, body {
 
 .regions-section {
     width: 100%;
-    background-color: aqua;
-    height: 550px;
+    background-color: rgb(250, 250, 250);
+    height: 850px;
 }
 
 .regions-container {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    background-color: rgb(250, 250, 250);
+}
+
+.regions-section h2 {
+    border-color: #C8102E;
 }
 
 .region {
@@ -111,10 +138,10 @@ html, body {
 .region h3 {
     font-family: MoskBold;
     padding: 90px 18px 0px 18px;
-    color: #fffffb;
+    color:rgb(250, 250, 250);
     font-size: 1.6rem;
     letter-spacing: 0.03rem;
-    text-shadow: 0.8px 0.8px 5px #181818;
+    text-shadow: 0.4px 0.4px 4px #202020;
 }
 
 .acueducto {
@@ -145,61 +172,132 @@ html, body {
     color: #1c1c1c;
     margin: 0%;
     text-align: center;
-    padding: 1.6em 0em;
-    font-family: MoskBold;
-    font-size: 2.4rem;
+    justify-content: center;
+    margin: 3em 0em 0.24em 0em;
+    font-family: MoskExtraBold;
+    font-size: 3rem;
     letter-spacing: 0.04rem;
 }
 
 .experiences-container {
     width: 100%;
-    background-color: brown;
-    height:1000px;
+    background-color: rgb(250, 250, 250);
+    height: 1900px;
 }
 
-.experience {
-    display: flex;
-    flex-direction: column;
+.experiences-container hr, .regions-section hr {
+    background-color: #750502;
+    height: 0.6rem;
+    width: 6%;
+    border: none;
+    margin-bottom: 9rem;
 }
 
-.learn-more-arrow {
+.learn-more-arrow, .learn-more-arrow i {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: 10%;
+    width: 22%;
+}
+
+.learn-more-arrow i {
+    padding: 0rem 0rem 1.6rem 0rem;
+    justify-content: center;
 }
 
 #arrow {
-    color: white;
+    color: #1c1c1c;
 }
 
 #arrow-bg{
-    color:red;
+    color:rgb(250, 250, 250);
 }
 
 .experience {
     font-family: MoskSemiBold;
     font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 #icon-bg-footer {
-    color: #1c1c1c;
+    color: #443131;
 }
 
 #icon-footer {
-    color: #fffffb;
+    color: rgb(250, 250, 250);
 }
 
 .experiences-sections-one, .experiences-sections-two, .experiences-sections-three {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    background-size: cover;
+
 }
 
 .vendimia, .hiking, .swiming, .lights, .hotairballoon, .eat {
-    width: 42%;
+    width: 49%;
+    margin: 0.88rem 0em
 }
 
 .vendimia {
     background-image: url(vendimia.jpg);
-    background-size: cover;
+    background-position: center;
+}
+
+.hiking {
+    background-image: url(Hiking.jpg);
+}
+
+.swiming {
+    background-image: url(nadarpinal.jpg);
+}
+
+.lights {
+    background-image: url(navidadqro.jpeg);
+}
+
+.hotairballoon {
+    background-image: ;
+}
+
+.eat {
+    background-image: url(enchiladas-queretanas.jpg);
+    background-position: center;
+}
+
+.experience h3 {
+    font-family:  MoskBold;
+    color: rgb(250, 250, 250);
+    font-size: 2.8rem;
+    letter-spacing: 0.016rem;
+    text-shadow: 0.2px 0.2px 1px #202020;
+    padding-left: 2rem;
+    margin: 0%;
+}
+
+.experience h4 {
+    font-family: MoskNormal;
+    color: rgb(250, 250, 250);
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem 2rem 2.2rem;
+    letter-spacing: 0.04rem;
+    margin: 0%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fd9200;
+}
+
+.footer-links {
+    margin-right: 1.2em;
 }
 
