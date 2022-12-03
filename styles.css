@@ -222,11 +222,18 @@ html, body {
 }
 
 #icon-bg-footer {
-    color: #443131;
+    color: rgb(250, 250, 250);
 }
 
 #icon-footer {
+    color: #028180;
+}
+
+.copyright-footer {
     color: rgb(250, 250, 250);
+    font-family: MoskMedium;
+    letter-spacing: 0.03rem;
+    font-size: 1.1rem;
 }
 
 .experiences-sections-one, .experiences-sections-two, .experiences-sections-three {
@@ -279,7 +286,7 @@ html, body {
     margin: 0%;
 }
 
-.experience h4 {
+.learn-more {
     font-family: MoskNormal;
     color: rgb(250, 250, 250);
     font-size: 1.2rem;
@@ -294,7 +301,7 @@ html, body {
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: #fd9200;
+    background-color: #028180;
 }
 
 .footer-links {
@@ -303,38 +310,67 @@ html, body {
 
 .recent-articles {
     font-family: MoskBold;
-    width: 96%;
-    background-color: #fd9200;
-    border: 1px solid #202020;
+    width: 96.6%;
+    border: 2px solid #202020;
     border-radius: 10px;
     margin: auto;
-    height: 340px;
+    height: 380px;
     margin-bottom: 3rem;
 }
 
 .recent-articles h1 {
     padding: 2rem 2rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
     margin: 0%;
 }
 
 .articles-box {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .article {
-    width: 18%;
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 23%;
+    height: 250px;
+    border-radius: 10px;
+    color: #202020;
+    background-size: cover;
+}
+
+.article h4 {
+   color: rgb(250, 250, 250); 
+   font-family: MoskBold;
+   font-size: 1.5rem;
+   letter-spacing: 0.01rem;
+   margin: 0%;
+   padding-left: 0.8rem;
+}
+
+.article h5 {
+    color: rgb(250, 250, 250); 
+    font-family: MoskNormal;
+    font-size: 1.2rem;
+    letter-spacing: 0.03rem;
+    margin: 0%;
+    padding: 0.2rem 1rem 1rem 0.8rem;
 }
 
 .art1 {
-
+    background-image: url(CasaMota.jpg);    
 }
 
 .art2 {
-
+    background-image: url(Cecina.jpg);
 }
 
 .art3 {
-    background-color: ;
+    background-image: url(CavaBocanegra.jpg);
+}
+
+.art4 {
+    background-image: url(GranjaElHigueron.jpg);
 }
