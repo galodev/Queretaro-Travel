@@ -311,7 +311,6 @@ html, body {
 .recent-articles {
     font-family: MoskBold;
     width: 96.6%;
-    border: 2px solid #202020;
     border-radius: 10px;
     margin: auto;
     height: 380px;
