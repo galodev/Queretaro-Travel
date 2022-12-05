@@ -127,7 +127,7 @@ html, body {
 }
 
 .region {
-    width: 14.8%;
+    width: 15%;
     height: 380px;
     text-align: center;
     border-radius: 5px;
@@ -175,7 +175,7 @@ html, body {
     justify-content: center;
     margin: 2em 0em 0.24em 0em;
     font-family: MoskExtraBold;
-    font-size: 3rem;
+    font-size: 1.3rem;
     letter-spacing: 0.04rem;
 }
 
@@ -187,7 +187,7 @@ html, body {
 
 .experiences-container hr, .regions-section hr {
     background-color: #750502;
-    height: 0.6rem;
+    height: 0.28rem;
     width: 6%;
     border: none;
     margin-bottom: 7rem;
@@ -229,11 +229,20 @@ html, body {
     color: #028180;
 }
 
-.copyright-footer {
+.copyright-footer, .cookies-footer {
     color: rgb(250, 250, 250);
     font-family: MoskMedium;
     letter-spacing: 0.03rem;
     font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.copyright-footer {
+    padding-left: 3.5rem;
+}
+
+.footer-links {
+    padding-right: 3.2rem;
 }
 
 .experiences-sections-one, .experiences-sections-two, .experiences-sections-three {
@@ -292,7 +301,9 @@ html, body {
     font-size: 1.2rem;
     padding: 0.2rem 1rem 2rem 2.2rem;
     letter-spacing: 0.04rem;
+    text-shadow: 0.2px 0.2px 1px #202020;
     margin: 0%;
+
 }
 
 .footer-container {
@@ -302,10 +313,6 @@ html, body {
     width: 100%;
     height: 100px;
     background-color: #028180;
-}
-
-.footer-links {
-    margin-right: 1.2em;
 }
 
 .recent-articles {
@@ -343,19 +350,21 @@ html, body {
 .article h4 {
    color: rgb(250, 250, 250); 
    font-family: MoskBold;
-   font-size: 1.5rem;
-   letter-spacing: 0.01rem;
+   font-size: 1.56rem;
+   letter-spacing: 0.026rem;
    margin: 0%;
-   padding-left: 0.8rem;
+   padding-left: 1rem;
+   text-shadow: 0.2px 0.2px 1px #202020;
 }
 
 .article h5 {
     color: rgb(250, 250, 250); 
     font-family: MoskNormal;
-    font-size: 1.2rem;
-    letter-spacing: 0.03rem;
+    font-size: 1.14rem;
+    letter-spacing: 0.06rem;
     margin: 0%;
-    padding: 0.2rem 1rem 1rem 0.8rem;
+    padding: 0.16rem 1rem 1rem 1rem;
+    text-shadow: 0.2px 0.2px 1px #202020;
 }
 
 .art1 {
@@ -373,3 +382,19 @@ html, body {
 .art4 {
     background-image: url(GranjaElHigueron.jpg);
 }
+
+.pre-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #eff5e4;
+    background-image: url(Pueblos-Magicos_horizontal.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: bottom 2rem right 2rem;
+}
+
+.pre-footer img{
+    display: none;
+}
+
