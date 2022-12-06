@@ -54,6 +54,59 @@ src: url(Mosk\ Light\ 300.ttf);
     src: url(HelveticaNowText-Bold\ \(2\).ttf);
     }
 
+@font-face {
+    font-family: BrandonBold;
+    src: url(Brandon_bld.otf);
+    }
+
+@font-face {
+    font-family: BrandonBlack;
+    src: url(Brandon_blk.otf);
+    }
+
+
+@font-face {
+    font-family: BrandonMedium;
+    src: url(Brandon_med.otf);
+    }
+
+
+@font-face {
+    font-family: BrandonRegular;
+    src: url(Brandon_reg.otf);
+    }
+
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(Roboto-Regular.ttf);
+    }
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(Roboto-Medium.ttf);
+    }
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(Roboto-Bold.ttf);
+    }
+                
+@font-face {
+    font-family: BrandonLight;
+    src: url(Brandon_light.otf);
+    }
+                    
+@font-face {
+    font-family: RobotoSlabBold;
+    src: url(RobotoSlab-Bold.ttf);
+    }
+
+@font-face {
+    font-family: RobotoSlabRegular;
+    src: url(RobotoSlab-Regular.ttf);
+    }
+
 
 
 html, body {
@@ -87,14 +140,14 @@ html, body {
 .nav-a {
     text-decoration: none;
     margin: 0em 0.7em;
-    font-family: MoskBold;
-    font-size: 1rem;
-    color: #1c1c1c;
+    font-family: BrandonBold;
+    font-size: 1.18rem;
+    letter-spacing: 0.02rem;
+    color: #202020;
 }
 
 .nav-a:hover {
-    color: #750502;
-    border-bottom: 0.18rem solid #750502;
+    border-bottom: 0.18rem solid #202020;
 }
 
 @media (max-width:675px) {
@@ -113,7 +166,7 @@ html, body {
 .regions-section {
     width: 100%;
     background-color: rgb(250, 250, 250);
-    height: 680px;
+    height: 640px;
 }
 
 .regions-container {
@@ -128,19 +181,19 @@ html, body {
 
 .region {
     width: 15%;
-    height: 380px;
+    height: 370px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 6px;
     background-size: cover;
     background-position: center;
 }
 
 .region h3 {
-    font-family: MoskBold;
+    font-family: BrandonMedium;
     padding: 110px 18px 0px 18px;
     color:rgb(250, 250, 250);
-    font-size: 1.6rem;
-    letter-spacing: 0.03rem;
+    font-size: 1.66rem;
+    letter-spacing: 0.06rem;
     text-shadow: 0.4px 0.4px 4px #202020;
 }
 
@@ -173,9 +226,9 @@ html, body {
     margin: 0%;
     text-align: center;
     justify-content: center;
-    margin: 2em 0em 0.24em 0em;
-    font-family: MoskExtraBold;
-    font-size: 1.3rem;
+    margin: 6rem 0rem 0rem 0rem;
+    font-family: BrandonBlack;
+    font-size: 1.2rem;
     letter-spacing: 0.04rem;
 }
 
@@ -186,11 +239,10 @@ html, body {
 }
 
 .experiences-container hr, .regions-section hr {
-    background-color: #750502;
-    height: 0.28rem;
+    background-color: #202020;
+    height: 0.2rem;
     width: 6%;
     border: none;
-    margin-bottom: 7rem;
 }
 
 .learn-more-arrow, .learn-more-arrow i {
@@ -214,7 +266,7 @@ html, body {
 }
 
 .experience {
-    font-family: MoskSemiBold;
+    font-family: RobotoSlabBold;
     font-size: 1.4rem;
     display: flex;
     flex-direction: column;
@@ -225,24 +277,29 @@ html, body {
     color: rgb(250, 250, 250);
 }
 
+hr {
+    margin: auto;
+}
+
 #icon-footer {
     color: #028180;
 }
 
-.copyright-footer, .cookies-footer {
+.copyright-footer {
     color: rgb(250, 250, 250);
-    font-family: MoskMedium;
-    letter-spacing: 0.03rem;
+    font-family: BrandonMedium;
+    letter-spacing: 0.04rem;
     font-size: 1.1rem;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .copyright-footer {
-    padding-left: 3.5rem;
+    padding-left: 3rem;
 }
 
 .footer-links {
-    padding-right: 3.2rem;
+    padding-right: 3rem;
 }
 
 .experiences-sections-one, .experiences-sections-two, .experiences-sections-three {
@@ -255,8 +312,9 @@ html, body {
 }
 
 .vendimia, .hiking, .swiming, .lights, .hotairballoon, .eat {
-    width: 49%;
-    margin: 0.88rem 0em
+    width: 49.33%;
+    margin: 0.6rem 0em;
+    background-repeat: no-repeat;
 }
 
 .vendimia {
@@ -286,24 +344,23 @@ html, body {
 }
 
 .experience h3 {
-    font-family:  MoskBold;
+    font-family:  RobotoSlabRegular;
     color: rgb(250, 250, 250);
-    font-size: 2.8rem;
-    letter-spacing: 0.016rem;
+    font-size: 2.6rem;
+    letter-spacing: 0.14rem;
     text-shadow: 0.2px 0.2px 1px #202020;
     padding-left: 2rem;
     margin: 0%;
 }
 
 .learn-more {
-    font-family: MoskNormal;
+    font-family: BrandonRegular;
     color: rgb(250, 250, 250);
-    font-size: 1.2rem;
-    padding: 0.2rem 1rem 2rem 2.2rem;
+    font-size: 1.3rem;
+    padding: 0rem 1rem 2rem 2.2rem;
     letter-spacing: 0.04rem;
     text-shadow: 0.2px 0.2px 1px #202020;
     margin: 0%;
-
 }
 
 .footer-container {
@@ -316,7 +373,7 @@ html, body {
 }
 
 .recent-articles {
-    font-family: MoskBold;
+    font-family: BrandonBold;
     width: 96.6%;
     border-radius: 10px;
     margin: auto;
@@ -336,7 +393,7 @@ html, body {
     justify-content: space-evenly;
 }
 
-.article {
+/* .article {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -345,6 +402,7 @@ html, body {
     border-radius: 10px;
     color: #202020;
     background-size: cover;
+    cursor: pointer;
 }
 
 .article h4 {
@@ -367,6 +425,23 @@ html, body {
     text-shadow: 0.2px 0.2px 1px #202020;
 }
 
+.art4 {
+    width: 23%;
+    height: 250px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: #202020;
+    cursor: pointer;
+}
+
 .art1 {
     background-image: url(CasaMota.jpg);    
 }
@@ -383,18 +458,96 @@ html, body {
     background-image: url(GranjaElHigueron.jpg);
 }
 
+*/
+
 .pre-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #eff5e4;
     background-image: url(Pueblos-Magicos_horizontal.png);
     background-size: 10%;
     background-repeat: no-repeat;
-    background-position: bottom 2rem right 2rem;
+    background-position: bottom 6.6rem left 3rem;
+    padding: 2.6rem 3rem;
 }
 
 .pre-footer img{
     display: none;
 }
 
+.pre-footer h2 {
+    font-family: BrandonBold;
+    font-size: 1.4rem;
+    margin: 0%;
+    padding-bottom: 0.34rem;
+}
+
+.pre-footer p {
+    font-family: BrandonMedium;
+    font-size: 1.08rem;
+    margin: 0%;
+    padding: 0.24rem 0rem;
+    cursor: pointer;
+}
+
+.pre-footer p:hover {
+    font-family: BrandonBold;
+}
+
+.section-maintitle {
+    text-align: center;
+    font-family: RobotoSlabBold;
+    font-size: 2.68rem;
+    color: #202020;
+    margin: 0%;
+    padding: 2.6rem 0rem 3.6rem 0rem;
+    letter-spacing: 0.06rem;
+}
+
+#galovdev-prefooter {
+    font-size:1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+.article {
+    position: relative;
+    text-align: center;
+    color: rgb(250, 250, 250);
+}
+
+.article img{
+    width: 360px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.article h4 {
+    position:absolute;
+    bottom: 9.4rem;
+    left: 1.6rem;
+    font-family: MoskBold;
+    font-size: 1.56rem;
+    letter-spacing: 0.026rem;
+    text-shadow: 0.2px 0.2px 1px #202020;
+}
+
+.article h5 {
+    position:absolute;
+    bottom: 8rem;
+    left: 1.6rem;
+    font-family: MoskNormal;
+    font-size: 1.14rem;
+    letter-spacing: 0.08em;
+    text-shadow: 0.2px 0.2px 1px #202020;
+}
+
+
+.image {
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
