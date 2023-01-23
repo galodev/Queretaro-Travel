@@ -107,14 +107,184 @@ src: url(Mosk\ Light\ 300.ttf);
     src: url(RobotoSlab-Regular.ttf);
     }
 
-
-
+nav, main, section, footer{ 
+    width: 100%;
+}
+   
+*{ 
+    margin:0; 
+    padding: 0; 
+    font: inherit;
+    box-sizing: border-box;
+}
+    
+ul[ role=”list” ], ol [ role=”list”] {
+    list-style:none; 
+}
+    
+html:focus-within {
+    scroll-behavior: smooth 
+}
+    
 html, body {
-    margin: 0%;
-    padding: 0%;
-    background-color: rgb(250, 250, 250);
+    height:100% 
+} 
+    
+body { 
+    text-rendering: optimize-speed; 
+    min-height: 100vh
+}
+    
+a {
+    text-decoration: none;
+}
+    
+*, 
+*::before, 
+*::after {
+    box-sizing:border-box;
+}
+    
+img, picture, svg {
+    max-width: 100%;
+    display: block
+}
+    
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within { scroll-behavior:auto; }
+}
+    
+.nav-container, .regions-container { 
+    width: 96%; 
+    max-width: 1800px; 
+    margin: 0 auto; 
 }
 
+@media (max-width: 600px){
+    .nav-container, .regions-container { 
+        width: 90%; 
+}}
+
+.region-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.6em;
+}
+
+.region {
+    min-height: 300px;
+    text-align: center;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1500px) {
+    .region {
+        min-height: 350px;
+    }
+}
+
+.acueducto {
+    background-image: url(losarcos.jpg);
+}
+
+.centro {
+    background-image: url(centrohistorico1.jpg);
+}
+
+.sierragorda {
+    background-image: url(pinaldeamoles.jpeg);
+}
+
+.pueblito {
+    background-image: url(piramide.jpg);
+}
+
+.bernal {
+    background-image: url(penadebernal1.jfif);
+}
+
+.vinedos {
+    background-image: url(vineria.jpg);
+}
+
+.volar-container{
+    margin: 6em auto;
+    text-align: center;
+    position: relative;
+}
+
+.image-section-title{
+    position: absolute;
+    color: white;
+    top: 34%;
+    left: 6%;
+    font-family: RobotoSlabBold;
+    letter-spacing: 0.1rem;
+    font-size: 4.4rem;
+    text-align: start;
+    line-height: 4.8rem;
+}
+
+.image-section-description{
+    position: absolute;
+    color: white;
+    top: 52%;
+    left: 6%;
+    font-family: BrandonMedium;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    text-align: start;
+    line-height: 4.8rem;
+}
+
+.experience-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 1.6em;
+}
+
+.experience {
+    font-family: RobotoSlabBold;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.vendimia {
+    background-image: url(vendimia.jpg);
+}
+
+.hiking {
+    background-image: url(Hiking.jpg);
+}
+
+.swiming {
+    background-image: url(nadarpinal.jpg);
+}
+
+.lights {
+    background-image: url(navidadqro.jpeg);
+}
+
+.hotairballoon {
+    background-image: ;
+}
+
+.eat {
+    background-image: url(enchiladas-queretanas.jpg);
+    background-position: center;
+}
+
+
+
+
+/* 
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -180,8 +350,7 @@ html, body {
 }
 
 .region {
-    width: 15%;
-    height: 370px;
+    min-height: 300px;
     text-align: center;
     border-radius: 6px;
     background-size: cover;
@@ -195,30 +364,6 @@ html, body {
     font-size: 1.66rem;
     letter-spacing: 0.06rem;
     text-shadow: 0.4px 0.4px 4px #202020;
-}
-
-.acueducto {
-    background-image: url(losarcos.jpg);
-}
-
-.centro {
-    background-image: url(centrohistorico1.jpg);
-}
-
-.sierragorda {
-    background-image: url(pinaldeamoles.jpeg);
-}
-
-.pueblito {
-    background-image: url(piramide.jpg);
-}
-
-.bernal {
-    background-image: url(penadebernal1.jfif);
-}
-
-.vinedos {
-    background-image: url(vineria.jpg);
 }
 
 .section-title {
@@ -265,14 +410,6 @@ html, body {
     color:rgb(250, 250, 250);
 }
 
-.experience {
-    font-family: RobotoSlabBold;
-    font-size: 1.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
 #icon-bg-footer {
     color: rgb(250, 250, 250);
 }
@@ -315,32 +452,6 @@ hr {
     width: 49.33%;
     margin: 0.6rem 0em;
     background-repeat: no-repeat;
-}
-
-.vendimia {
-    background-image: url(vendimia.jpg);
-    background-position: center;
-}
-
-.hiking {
-    background-image: url(Hiking.jpg);
-}
-
-.swiming {
-    background-image: url(nadarpinal.jpg);
-}
-
-.lights {
-    background-image: url(navidadqro.jpeg);
-}
-
-.hotairballoon {
-    background-image: ;
-}
-
-.eat {
-    background-image: url(enchiladas-queretanas.jpg);
-    background-position: center;
 }
 
 .experience h3 {
@@ -458,8 +569,6 @@ hr {
     background-image: url(GranjaElHigueron.jpg);
 }
 
-*/
-
 .pre-footer {
     display: flex;
     flex-direction: row;
@@ -551,3 +660,5 @@ hr {
     display: block;
     width: 100%;
 }
+
+*/
