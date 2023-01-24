@@ -43,7 +43,6 @@ src: url(Mosk\ Light\ 300.ttf);
     src: url(HelveticaNowText-Medium\ \(1\).ttf);
     }
 
-
 @font-face {
     font-family: HelveticaNowExtraBold;
     src: url(HelveticaNowText-ExtraBold.ttf);
@@ -64,18 +63,15 @@ src: url(Mosk\ Light\ 300.ttf);
     src: url(Brandon_blk.otf);
     }
 
-
 @font-face {
     font-family: BrandonMedium;
     src: url(Brandon_med.otf);
     }
 
-
 @font-face {
     font-family: BrandonRegular;
     src: url(Brandon_reg.otf);
     }
-
 
 @font-face {
     font-family: RobotoRegular;
@@ -109,6 +105,7 @@ src: url(Mosk\ Light\ 300.ttf);
 
 nav, main, section, footer{ 
     width: 100%;
+    max-width: 100%;
 }
    
 *{ 
@@ -116,6 +113,7 @@ nav, main, section, footer{
     padding: 0; 
     font: inherit;
     box-sizing: border-box;
+    color: #202020;
 }
     
 ul[ role=”list” ], ol [ role=”list”] {
@@ -127,12 +125,13 @@ html:focus-within {
 }
     
 html, body {
-    height:100% 
+    height:100%;
+    background-color:rgb(250, 250, 250);
 } 
     
 body { 
     text-rendering: optimize-speed; 
-    min-height: 100vh
+    min-height: 100vh;
 }
     
 a {
@@ -160,10 +159,122 @@ img, picture, svg {
     margin: 0 auto; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-container, .navbar-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-container {
+    align-items: center;
+    min-height: 100px;
+    padding: 3em auto;
+}
+
+.nav-container img {
+    max-height: 50px;
+}
+
+.navbar-ul {
+    gap: 0.8em;
+}
+
+.navbar-ul a{
+    margin: 0em 0.7em;
+    font-family: BrandonMedium;
+    font-size: 1.18rem;
+    letter-spacing: 0.02rem;
+}
+
+.navbar-ul a:hover {
+    border-bottom: 0.18rem solid #202020;
+}
+
+.language-nav {
+    padding-left: 0.2em;
+}
+
 @media (max-width: 600px){
     .nav-container, .regions-container { 
         width: 90%; 
-}}
+    } 
+    .nav-container{
+        flex-direction: column;
+        margin: 2em auto 0.6;
+        align-items: center;
+        justify-content: center;
+        min-height: 150px
+    } 
+    .nav-container img{
+        max-height: 40px;
+    }
+    .navbar-ul {
+        margin: 1.4em auto 0.6em auto;
+        align-items: center;
+        gap: 0em;
+    } 
+    .navbar-ul a{
+        letter-spacing: 0.04em;
+        font-size: 1.1rem;
+    }
+    .language-nav {
+
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-family: BrandonBold;
+    margin: 3.8em 0em 0em 0em;
+    font-size: 1.4rem;
+    letter-spacing: 0.04rem;
+}
+
+.section-description {
+    text-align: center;
+    font-family: RobotoSlabBold;
+    font-size: 2.4rem;
+    letter-spacing: 0.04rem;
+    margin: 0.8em auto 1.2em auto;
+}
+
+@media (max-width: 600px){
+    .section-title {
+        margin: 2em 0rem 0rem 0rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.06rem;
+    }
+    .section-description {
+        font-size: 1.6rem;
+        letter-spacing: 0.06rem;
+        margin: 0.4em auto 1.2em auto;
+    }
+}
 
 .region-cards {
     display: grid;
@@ -172,17 +283,24 @@ img, picture, svg {
 }
 
 .region {
-    min-height: 300px;
+    min-height: 320px;
     text-align: center;
     border-radius: 6px;
     background-size: cover;
     background-position: center;
 }
 
+.region h3 {
+    font-family: BrandonMedium;
+    padding: 5em 1.2em 0em 1.2em;
+    color:rgb(250, 250, 250);
+    font-size: 1.66rem;
+    letter-spacing: 0.06rem;
+    text-shadow: 0.4px 0.4px 4px #202020;
+}
+
 @media (min-width: 1500px) {
-    .region {
-        min-height: 350px;
-    }
+    .region-cards
 }
 
 .acueducto {
@@ -209,17 +327,60 @@ img, picture, svg {
     background-image: url(vineria.jpg);
 }
 
-.volar-container{
+/* .image-container {
+    width: 100vw;
+    height: 100%;
+    text-align: start;
+    position: relative;
+    background-image: url("GLOBO-QRO.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
     margin: 6em auto;
-    text-align: center;
+    padding: 12em 0em 12em 4em;
+}
+
+.overlay h1{
+    color: white;
+    text-align: start;
+    font-family: RobotoSlabBold;
+    letter-spacing: 0.1rem;
+    font-size: 4.4rem;
+    line-height: 4.8rem;
+    padding-bottom: 0.14em;
+}
+
+.overlay p{
+    color: white;
+    font-family: BrandonMedium;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    text-align: start;
+} */
+
+.image-container{
+    text-align: start;
+    margin: 6em auto;
     position: relative;
 }
 
-.image-section-title{
+.image-container img {
+    width: 100%;
+    height: 100%;
+    max-height: 740px;
+    object-fit: cover;
+    filter: contrast(90%)
+}
+
+.image-container h1{
     position: absolute;
-    color: white;
-    top: 34%;
+    top: 36%;
     left: 6%;
+    color: white;
     font-family: RobotoSlabBold;
     letter-spacing: 0.1rem;
     font-size: 4.4rem;
@@ -227,16 +388,50 @@ img, picture, svg {
     line-height: 4.8rem;
 }
 
-.image-section-description{
+.image-container p{
     position: absolute;
-    color: white;
-    top: 52%;
+    top: 46%;
     left: 6%;
+    color: white;
     font-family: BrandonMedium;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
     text-align: start;
     line-height: 4.8rem;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .image-container h1{
+        top: 34%;
+        left: 6%;
+        font-size: 3rem;
+        line-height: 3rem
+    }
+    .image-container p{
+        top: 40%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-container{
+        margin: 2.8em auto;
+    }
+    .image-container h1{
+        max-width: 300px;
+        top: 32%;
+        left: 6%;
+        letter-spacing: 0.08rem;
+        font-size: 1.8rem;
+        text-align: start;
+        line-height: 2.1rem;
+    }
+    .image-container p{
+        top: 50%;
+        letter-spacing: 0.1rem;
+        font-size: 0.74rem;
+        line-height: 4.8rem;
+    }
 }
 
 .experience-cards{
@@ -246,79 +441,78 @@ img, picture, svg {
 }
 
 .experience {
-    font-family: RobotoSlabBold;
-    font-size: 1.4rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
     background-size: cover;
     background-position: center;
     min-height: 500px;
+    padding: 0em 0em 2em 2em;
+}
+
+.experience h3 {
+    color: white;
+    font-family: RobotoSlabBold;
+    font-size: 2.6rem;
+    letter-spacing: 0.16rem
+}
+
+.experience h4 {
+    color: white;
+    font-family: BrandonMedium;
+    font-size: 1rem;
+    letter-spacing: 0.06rem;
+}
+
+@media (max-width: 600px) {
+    .experience-cards{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-size: cover;
+        background-position: center;
+        min-height: 240px;
+        padding: 0em 0em 1.6em 1.6em;
+    }
+    .experience h3 {
+        font-size: 1.8rem;
+        letter-spacing: 0.16rem
+    }
+    .experience h4 {
+        font-size: 0.7rem;
+        letter-spacing: 0.06rem;
+        line-height: 1.2rem;
+    }
 }
 
 .vendimia {
-    background-image: url(vendimia.jpg);
+    background-image: url(vendimia-qro.webp);
 }
 
 .hiking {
-    background-image: url(Hiking.jpg);
+    background-image: url(hiking-3.jpeg);
 }
 
 .swiming {
-    background-image: url(nadarpinal.jpg);
+    background-image: url(cascada-4.jpeg);
 }
 
 .lights {
-    background-image: url(navidadqro.jpeg);
+    background-image: url(navidad-qro.jpeg);
 }
 
 .hotairballoon {
-    background-image: ;
+    background-image: url(globo-aire-qro.jpeg);
 }
 
 .eat {
     background-image: url(enchiladas-queretanas.jpg);
-    background-position: center;
 }
-
-
-
-
-/* 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:rgb(250, 250, 250);
-    margin: 0em;
-    width: 100%;
-    height: 5em
-}
-
-.nav-container img {
-    width: 11%;
-    margin: 0em 2.2em;
-    padding: 0%;
-}
-
-.navbar-ul {
-    display: flex;
-    list-style-type: none;
-    margin-right: 1em;
-}
-
-.nav-a {
-    text-decoration: none;
-    margin: 0em 0.7em;
-    font-family: BrandonBold;
-    font-size: 1.18rem;
-    letter-spacing: 0.02rem;
-    color: #202020;
-}
-
-.nav-a:hover {
-    border-bottom: 0.18rem solid #202020;
-}
+ 
+/*
 
 @media (max-width:675px) {
     .qro-video {
@@ -333,18 +527,6 @@ img, picture, svg {
     }
 }
 
-.regions-section {
-    width: 100%;
-    background-color: rgb(250, 250, 250);
-    height: 640px;
-}
-
-.regions-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(250, 250, 250);
-}
-
 .regions-section h2 {
     border-color: #C8102E;
 }
@@ -355,32 +537,6 @@ img, picture, svg {
     border-radius: 6px;
     background-size: cover;
     background-position: center;
-}
-
-.region h3 {
-    font-family: BrandonMedium;
-    padding: 110px 18px 0px 18px;
-    color:rgb(250, 250, 250);
-    font-size: 1.66rem;
-    letter-spacing: 0.06rem;
-    text-shadow: 0.4px 0.4px 4px #202020;
-}
-
-.section-title {
-    color: #1c1c1c;
-    margin: 0%;
-    text-align: center;
-    justify-content: center;
-    margin: 6rem 0rem 0rem 0rem;
-    font-family: BrandonBlack;
-    font-size: 1.2rem;
-    letter-spacing: 0.04rem;
-}
-
-.experiences-container {
-    width: 100%;
-    background-color: rgb(250, 250, 250);
-    height: 1900px;
 }
 
 .experiences-container hr, .regions-section hr {
