@@ -153,36 +153,11 @@ img, picture, svg {
     html:focus-within { scroll-behavior:auto; }
 }
     
-.nav-container, .regions-container, .article-cards, .pre-footer-elements, .recent-articles-title, .footer-container { 
+.nav-container, .regions-container, .article-cards, .pre-footer-elements, .recent-articles-title, .footer-container{ 
     width: 96%; 
     max-width: 1800px; 
     margin: 0 auto; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .nav-container, .navbar-ul {
     display: flex;
@@ -220,7 +195,7 @@ img, picture, svg {
 }
 
 @media (max-width: 600px){
-    .nav-container, .regions-container, .pre-footer-elements, .article-cards { 
+    .nav-container, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
         width: 92%; 
     } 
     .nav-container{
@@ -239,11 +214,16 @@ img, picture, svg {
     } 
     .navbar-ul a{
         letter-spacing: 0.04em;
-        font-size: 1.1rem;
-    }
-    .language-nav {
+        font-size: 1.18rem;
+        margin: 0em 0.4em;
+}}
 
-    }
+.lm {
+    cursor: pointer;
+}
+
+.lm:hover {
+    opacity: 80%;
 }
 
 .section-title {
@@ -288,6 +268,7 @@ img, picture, svg {
     background-size: cover;
     background-position: center;
     filter: saturate(92%);
+    cursor: pointer;
 }
 
 .region h3 {
@@ -299,8 +280,8 @@ img, picture, svg {
     text-shadow: 0.4px 0.4px 4px #202020;
 }
 
-@media (min-width: 1500px) {
-    .region-cards
+.region a{
+    color:rgb(250, 250, 250);
 }
 
 .acueducto {
@@ -327,35 +308,6 @@ img, picture, svg {
     background-image: url(vineria.jpg);
 }
 
-/* .image-container {
-    width: 100vw;
-    height: 100%;
-    text-align: start;
-    position: relative;
-    background-image: url("GLOBO-QRO.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.overlay {
-    width: 100%;
-    height: 100%;
-    margin: 6em auto;
-    padding: 12em 0em 12em 4em;
-}
-
-.overlay h1{
-
-}
-
-.overlay p{
-    color: white;
-    font-family: BrandonMedium;
-    letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    text-align: start;
-} */
-
 .image-container{
     text-align: start;
     margin: 5em auto 4em auto;
@@ -374,7 +326,7 @@ img, picture, svg {
     position: absolute;
     top: 36%;
     left: 6%;
-    color: white;
+    color: rgb(250, 250, 250);
     font-family: RobotoSlabBold;
     letter-spacing: 0.1rem;
     font-size: 4.4rem;
@@ -386,7 +338,7 @@ img, picture, svg {
     position: absolute;
     top: 46%;
     left: 6%;
-    color: white;
+    color: rgb(250, 250, 250);
     font-family: BrandonMedium;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
@@ -445,17 +397,25 @@ img, picture, svg {
 }
 
 .experience h3 {
-    color: white;
+    color: rgb(250, 250, 250);
     font-family: RobotoSlabBold;
     font-size: 2.6rem;
     letter-spacing: 0.16rem
 }
 
 .experience h4 {
-    color: white;
+    color: rgb(250, 250, 250);
     font-family: BrandonMedium;
     font-size: 1rem;
     letter-spacing: 0.06rem;
+}
+
+.learn-more {
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    opacity: 80%;
 }
 
 @media (max-width: 600px) {
@@ -510,18 +470,29 @@ img, picture, svg {
     font-family: BrandonBold;
     font-size: 1.8rem;
     letter-spacing: 0.04rem;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.8em;
     width: 96%;
+}
+
+@media (max-width:600px) {
+    .recent-articles-title {
+        width: 92%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        padding-bottom: 0.6em;
+    }
 }
 
 .article-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 1.2em;
-    margin: 0 auto;
+    margin: 0em auto;
+    padding-bottom: 0.2em;
 }
 
 .article {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -533,38 +504,17 @@ img, picture, svg {
     position: relative;
 }
 
-.overlay p{
-    color: rgb(250, 250, 250); 
-    font-family: MoskNormal;
-    font-size: 1.1rem;
-    letter-spacing: 0.04rem;
-    line-height: 2rem;
-    text-shadow: 0.16px 0.16px 1px #202020;
-}
-
-.overlay i{
-    color: white;
-}
-
-.overlay h1{
-    color: rgb(250, 250, 250); 
-    font-family: MoskBold;
-    font-size: 1.3rem;
-    letter-spacing: 0.06rem;
-    text-shadow: 0.16px 0.16px 1px #202020;
-}
-
 .overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     position: absolute;
-    color: white;
+    color: rgb(250, 250, 250);
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.80);
     border-radius: 0.8em;
     overflow: hidden;
     width: 100%;
@@ -572,8 +522,34 @@ img, picture, svg {
     transition: .5s ease;
 }
 
+.overlay h1{
+    color: rgb(250, 250, 250); 
+    font-family: MoskBold;
+    font-size: 1.4rem;
+    padding-bottom: 0.2em;
+    letter-spacing: 0.08rem;
+    text-shadow: 0.16px 0.16px 1px #202020;
+}
+
+.overlay p{
+    color: rgb(250, 250, 250); 
+    font-family: MoskNormal;
+    font-size: 1.08rem;
+    letter-spacing: 0.08rem;
+    line-height: 2.1rem;
+    text-shadow: 0.16px 0.16px 1px #202020;
+}
+
+.overlay i{
+    color: rgb(250, 250, 250);
+}
+
 .article:hover .overlay {
     height: 100%;
+}
+
+.website-article:hover {
+    text-decoration: underline;
 }
 
 .article h4{
@@ -598,10 +574,6 @@ img, picture, svg {
     background-image: url(CasaMota.jpg);            
 }
 
-.art1 h1:hover {
-    
-}
-
 .art2 {
     background-image: url(Cecina.jpg);
 }
@@ -616,7 +588,7 @@ img, picture, svg {
 
 .find-us-container {
     text-align: center;
-    margin: 3.6em auto;
+    margin: 3.8em auto;
 }
 
 .find-us-links{
@@ -635,9 +607,25 @@ img, picture, svg {
     color: #202020;
 }
 
+.icon-line p{
+    color: #202020;
+    font-family: BrandonMedium;
+    letter-spacing: 0.04rem;
+    font-size: 1.1rem;
+}
+
+.icon-line i{
+    color: #202020;
+    padding-right: 0.44em;
+}
+
+.share-icon {
+    cursor: pointer;
+}
+
 .pre-footer{
     background-color: #eff5e4;
-    margin: 2em auto;
+    margin: 2em auto 0em auto;
 }
  
 .pre-footer-elements {
@@ -645,11 +633,7 @@ img, picture, svg {
     display: grid;
     gap: 0.8em;
     min-height: 240px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    /* background-image: url(Pueblos-Magicos_horizontal.png);
-    background-size: 10%;
-    background-repeat: no-repeat; 
-    background-position: bottom 8.4em left 0.2em; */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-template-areas: "section1 section2"
                          "section3 section4"
                          "section5 section6";
@@ -676,120 +660,268 @@ img, picture, svg {
     letter-spacing: 0.02rem;
 }
 
+.pf-element {
+    justify-content: center;
+}
+
 footer {
     background-color: #028180;
 }
 
-/*
-
-@media (max-width:675px) {
-    .qro-video {
-        width: 100%;
-    }
-    .nav-container {
-        flex-direction: column;
-    }
-    .nav-a {
-        font-size: 0.8rem;
-        margin: 0em 0.8em;
-    }
-}
-
-.regions-section h2 {
-    border-color: #C8102E;
-}
-
-.region {
-    min-height: 300px;
-    text-align: center;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-}
-
-.experiences-container hr, .regions-section hr {
-    background-color: #202020;
-    height: 0.2rem;
-    width: 6%;
-    border: none;
-}
-
-.learn-more-arrow, .learn-more-arrow i {
+.footer-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 1.6em 0em;
     align-items: center;
-    width: 22%;
 }
 
-.learn-more-arrow i {
-    padding: 0rem 0rem 1.6rem 0rem;
-    justify-content: center;
+.copyright-footer p{
+    color: rgb(250, 250, 250);
+    font-family: BrandonMedium;
+    letter-spacing: 0.04rem;
+    font-size: 1.1rem;
 }
 
-#arrow {
-    color: #202020;
+.footer-links {
+    display: flex;
 }
 
-#arrow-bg{
-    color:rgb(250, 250, 250);
+@media (max-width:600px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    .copyright-footer p{
+        color: rgb(250, 250, 250);
+        font-family: BrandonMedium;
+        letter-spacing: 0.05rem;
+        font-size: 1.02rem;
+    }
+    .pf-element {
+        text-align: center;
+    }
+}
+
+
+#icon-footer {
+    color: #028180;
 }
 
 #icon-bg-footer {
     color: rgb(250, 250, 250);
 }
 
-hr {
-    margin: auto;
+
+/* --- article css --- */
+
+.article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container, .article-icons {
+    width: 60%; 
+    max-width: 1800px; 
+    margin: 0 auto; 
 }
 
-#icon-footer {
-    color: #028180;
+@media (max-width:600px) {
+    .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container {
+        width: 90%; 
+    }
 }
 
-.copyright-footer {
+@media (min-width:600px) and (max-width: 1200px){
+    .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container, .article-icons, .article-title {
+        width: 82%; 
+    }
+}
+
+.article-main-container {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+}
+
+@media (max-width:600px) {
+    .article-main-container {
+        margin-bottom: 1.6em;
+    }
+}
+
+.fa-circle-arrow-down {
     color: rgb(250, 250, 250);
-    font-family: BrandonMedium;
-    letter-spacing: 0.04rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-size: 1.2rem;
 }
 
-.copyright-footer {
-    padding-left: 3rem;
-}
-
-.footer-links {
-    padding-right: 3rem;
-}
-
-.experience h3 {
-    font-family:  RobotoSlabRegular;
-    color: rgb(250, 250, 250);
-    font-size: 2.6rem;
-    letter-spacing: 0.14rem;
-    text-shadow: 0.2px 0.2px 1px #202020;
-    padding-left: 2rem;
-    margin: 0%;
-}
-
-.learn-more {
-    font-family: BrandonRegular;
-    color: rgb(250, 250, 250);
-    font-size: 1.3rem;
-    padding: 0rem 1rem 2rem 2.2rem;
-    letter-spacing: 0.04rem;
-    text-shadow: 0.2px 0.2px 1px #202020;
-    margin: 0%;
-}
-
-.footer-container {
+.article-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: #028180;
+    align-items: flex-start;
+    margin: 3em auto 2em auto;
 }
 
-*/
+.icon-line {
+    padding-right: 1.4em;
+}
+
+.fa-solid {
+    padding-right: 0.2em;
+}
+
+.user-icon {
+    grid-area: user;
+}
+
+.share-icon {
+    grid-area: share;
+}
+
+.location-icon {
+    grid-area: location;
+}
+
+.language-icon {
+    grid-area: language;
+}
+
+.tag-icon {
+    grid-area: tag;
+}
+
+
+@media (max-width:600px){
+    .article-icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1fr));
+        grid-template-areas: "location location location "
+                             "language user tag"
+                             "share share share";
+    }
+    .icon-line {
+        padding-bottom: 0.48em;
+    }
+    .location-icon {
+        justify-self: center;
+        margin: 0em 0em 0.8em 0em;
+    }
+    .share-icon{
+        justify-self: center;
+        margin: 0.8em 0em 0em 0em;
+    }
+    .icon-line {
+        padding: 0;
+    }
+}
+
+.article-image {
+    width: 36%;
+    margin: 4em auto;
+    min-height: 330px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:600px) {
+    .article-image {
+        width: 80%;
+        min-height: 200px;
+        margin: 2.8em auto 4em auto;
+    }
+    .article-icons {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:600px) and (max-width: 1200px){
+    .article-image {
+        width: 70%;
+        min-height: 280px; 
+    }
+}
+
+.art-centro {
+    background-image: url(centro3.jpeg);
+}
+
+.image-centro-1 {
+    background-image: url(qro-bici.jpeg);
+}
+
+.image-centro-2 {
+    background-image: url(qro-museum.jpeg);
+} 
+
+.image-centro-3 {
+    background-image: url(arcos-article.webp)
+}
+
+.image-centro-4 {
+    background-image: url(antro-centro.webp)
+}
+
+.article-description {
+    font-family: BrandonBold;
+    font-size: 1.36rem;
+    letter-spacing: 0.06rem;
+    color: rgb(250, 250, 250);
+    padding-top: 6em;
+}
+
+.article-title {
+    font-family: RobotoSlabBold;
+    font-size: 2.6rem;
+    letter-spacing: 0.08rem;
+    margin: 0.7em auto 1.2em auto;
+    color: rgb(250, 250, 250);
+}
+
+.article-place-description {
+    font-family: RobotoSlabBold;
+    font-size: 1.4rem;
+    letter-spacing: 0.06rem;
+    line-height: 2rem
+}
+
+@media (max-width:600px) {
+    .article-place-description {
+        font-size: 1.14rem;
+        letter-spacing: 0.06rem;
+    }
+}
+
+.article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container {
+    margin-top: 3em;
+}
+
+.article-text1-container {
+    margin-top: 1.8em;
+}
+
+.article-place-info {
+    font-family: BrandonRegular;
+    font-size: 1.33rem;
+    letter-spacing: 0.04rem;
+}
+
+@media (max-width:600px) {
+    .article-place-info {
+        font-size: 1.24rem;
+        letter-spacing: 0.06rem;
+    }
+    .article-text1-container {
+        margin-top: 1.5em;
+    }
+}
+
+.article-place-titles {
+    font-family: RobotoSlabBold;
+    font-size: 1.6rem;
+    padding-bottom: 0.4em;
+    letter-spacing: 0.06rem;
+}
+
+@media (max-width:600px) {
+    .article-place-titles {
+        text-align: center;
+        padding-bottom: 0.8em;
+        font-size: 1.4rem;
+        letter-spacing: 0.04rem;
+    }
+}

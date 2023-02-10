@@ -1,23 +1,39 @@
-/*
+$(document).ready(function() {
+    $("a[href='#regions']").click(function(e) {
+      e.preventDefault();
+      var headerHeight = 125;
+      $("html, body").animate({
+        scrollTop: $("#regions").offset().top - headerHeight
+      }, 10);
+    });
+  });
 
-const art4 = document.querySelector(".art4")
-const h4 = document.querySelector(".title-article")
-const price = document.querySelector(".price-article")
+  $(document).ready(function() {
+    $("a[href='#experiences']").click(function(e) {
+      e.preventDefault();
+      var headerHeight = 90;
+      $("html, body").animate({
+        scrollTop: $("#experiences").offset().top - headerHeight
+      }, 10);
+    });
+  });
 
+  $(document).ready(function() {
+    $("a[href='#find-us']").click(function(e) {
+      e.preventDefault();
+      var headerHeight = 125;
+      $("html, body").animate({
+        scrollTop: $("#find-us").offset().top - headerHeight
+      }, 10);
+    });
+  });
 
-art4.addEventListener("mouseenter", () => {
-    art4.innerHTML = 
-    `
-    <p><i class="fa-solid fa-location-dot"></i>Jalpan de Serra</p>
-    <p><i class="fa-solid fa-dollar-sign"></i>355</p>
-    <p class="price-article" >El mejor hotel del pais</p>
-    `
-    document.querySelector(".price-article").style.color = white
-})
-
-art4.addEventListener("mouseout", () => {
-    art4.innerHTML = `<h4>Granja el Higuerón</h4>
-                     <h5>Hospedaje sustendable</h5>`
-})
-
-    
+  $(document).ready(function() {
+    $("a[href='#home']").click(function(e) {
+      e.preventDefault();
+      var headerHeight = 125;
+      $("html, body").animate({
+        scrollTop: $("#home").offset().top - headerHeight
+      }, 10);
+    });
+  });
