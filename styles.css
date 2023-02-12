@@ -159,10 +159,9 @@ img, picture, svg {
     margin: 0 auto; 
 }
 
-.nav-container, .navbar-ul {
+ .nav-container, .navbar-ul {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
 }
 
 .nav-container {
@@ -170,6 +169,8 @@ img, picture, svg {
     min-height: 100px;
     padding: 3em auto;
 }
+
+/*
 
 .nav-container img {
     max-height: 50px;
@@ -193,6 +194,46 @@ img, picture, svg {
 .language-nav {
     padding-left: 0.2em;
 }
+
+*/
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 1em;
+    color: #202020;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background-color: red;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 
 @media (max-width: 600px){
     .nav-container, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
@@ -284,6 +325,14 @@ img, picture, svg {
     color:rgb(250, 250, 250);
 }
 
+.region {
+    transition: all 0.4s ease;
+}
+
+.region:hover {
+    transform: scale(1.1);
+}
+
 .acueducto {
     background-image: url(losarcos.jpg);
 }
@@ -307,6 +356,7 @@ img, picture, svg {
 .vinedos {
     background-image: url(vineria.jpg);
 }
+
 
 .image-container{
     text-align: start;
@@ -877,6 +927,16 @@ footer {
     font-size: 1.4rem;
     letter-spacing: 0.06rem;
     line-height: 2rem
+}
+
+.writer {
+    display: flex;
+}
+
+.article-pfp {
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 0.6em;
 }
 
 @media (max-width:600px) {
