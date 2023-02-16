@@ -240,17 +240,13 @@ ul li:hover ul.dropdown {
 .fa-solid {
     cursor: pointer;
 }
-
-.fa-solid:hover {
-    color: gray;
-}
-
-.fa-sun {
-    color: #028180;
-}
-
+  
 .fa-moon {
     color: #202020;
+}
+
+.fa-moon:hover {
+    color: gray;
 }
 
 
