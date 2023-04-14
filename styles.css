@@ -251,7 +251,7 @@ ul li:hover ul.dropdown {
 
 
 @media (max-width: 600px){
-    .nav-container, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
+    .nav-container, .navbar-ul, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
         width: 92%; 
     } 
     .nav-container{
