@@ -179,7 +179,7 @@ img, picture, svg {
     align-items: center;
 }
 
-.nav-btn{
+.nav-btn, .navbar-ul a{
     margin: 0em 0.8em;
     font-family: BrandonMedium;
     font-size: 1.24rem;
@@ -187,6 +187,7 @@ img, picture, svg {
     color: #202020;
     padding: 0.6em 0em;
 }
+
 
 .nav a:hover {
     box-sizing: border-box;
@@ -251,7 +252,7 @@ ul li:hover ul.dropdown {
 
 
 @media (max-width: 600px){
-    .nav-container, .navbar-ul, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
+    .nav-container, .regions-container, .pre-footer-elements, .article-cards, .footer-container, .recent-articles-title, .article-text1-container, .article-text2-container, .article-text3-container, .article-place-info-container { 
         width: 92%; 
     } 
     .nav-container{
@@ -267,6 +268,7 @@ ul li:hover ul.dropdown {
         margin: 1.4em auto 0.6em auto;
         align-items: center;
         gap: 0em;
+        width: 100%;
     } 
     .navbar-ul a{
         letter-spacing: 0.04em;
@@ -818,8 +820,8 @@ footer {
 
 .article-icons {
     display: flex;
-    align-items: flex-start;
     margin: 3em auto 2em auto;
+    text-align: center;
 }
 
 .icon-line {
@@ -850,14 +852,20 @@ footer {
     grid-area: tag;
 }
 
+.writer-icon {
+    grid-area: writer;
+    display: flex;
+}
+
 
 @media (max-width:600px){
     .article-icons {
         display: grid;
+        align-items: center;
         grid-template-columns: repeat(auto-fit, minmax(1fr));
         grid-template-areas: "location location location "
-                             "language user tag"
-                             "share share share";
+                             "language writer tag"
+                             "share share user";
     }
     .icon-line {
         padding-bottom: 0.48em;
