@@ -272,7 +272,11 @@ ul li:hover ul.dropdown {
         letter-spacing: 0.04em;
         font-size: 1.18rem;
         margin: 0em 0.4em;
-}}
+    }
+    .nav-btn {
+        font-size: 1rem;
+    }
+}
 
 .lm {
     cursor: pointer;
