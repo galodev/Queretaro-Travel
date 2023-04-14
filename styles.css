@@ -211,7 +211,7 @@ ul li a{
     text-decoration: none;
 }
 
-.nav-btn-dropdown {
+#nav-btn-dropdown{
     color: rgb(250, 250, 250);
     padding: 0.66em 0em;
     font-family: BrandonRegular;
